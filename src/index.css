@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  /* @apply w-96 h-80 */
+}
+
+img {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 37vh;
+}
+
+img:hover {
+  box-shadow: #e48f0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+.card-container {
+  width: 350px;
+  background: #11111185;
+  color: wheat;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  text-align: center;
+  justify-content: center;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tertiarry-btn {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: wheat;
+}
+
+.tertiarry-btn:hover {
+  background-color: #e48f0f;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #000000d3;
+  margin-top: 15px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  padding: 20px;
+}
+
+.nav-logo-container {
+  color: wheat;
+  font-weight: 900;
+  font-size: 10px;
+  width: 50px;
+  text-align: center;
+  font-style: oblique;
+}
+
+.navbar-links-container a:hover {
+  /* border-bottom: #e48f0fa8; */
+  /* border: #e48f0f 2px thick; */
+  text-underline-position: below;
+}
+
+
+.navbar-menu-container {
+  display: none;
+}
+
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: wheat;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  height: 60px;
+}
+
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: wheat;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.home-container {
+  background-image: url('assets/dark-background.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 98vw;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.primary-button:hover {
+  background-color: green;
+}
+
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.home-banner-container {
+  position: relative;
+  display: flex;
+  padding: 4rem 2rem;
+  width: 55vw;
+  /* margin: auto; */
+}
+
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: wheat;
+  line-height: 5rem;
+  max-width: 600px;
+}
+
+.primary-text {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  max-width: 500px;
+  color: wheat;
+  margin: 1.5rem 0.5rem;
+}
+
+.secondary-button {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: wheat;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-button svg {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.secondary-button:hover {
+  background-color: #e48f0f;
+}
+
+section {
+  width: 350px;
+  background: #11111185;
+  color: wheat;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-btn {
+  background-color: #16621b;
+  padding: 0.3rem 0.8rem;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-around;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: wheat;
+}
+
+/* details styling */
+
+.detail-container {
+  width: 98vw;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.detail-title {
+  color: wheat;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  border: wheat;
+  padding: 30px;
+  text-transform: uppercase;
+}
+
+.detail-img {
+  width: 75vw;
+  height: 60vh;
+  padding-bottom: 25px;
+}
+
+.detail-infos {
+  color: wheat;
+  width: 75vw;
+  font-size: 23px;
+  margin: auto;
+}
+
+.detail-head {
+  padding-top: 120px;
+}
+
+.detail-btn {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: wheat;
+  transition: 0.2s;
+  margin: 20px auto;
+}
+
+.detail-btn:hover {
+  background-color: #e48f0f;
+}
