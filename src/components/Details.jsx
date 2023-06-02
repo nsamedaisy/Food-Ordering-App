@@ -15,7 +15,7 @@ export default function Details() {
         <div className='detail-title'><h4 class='card-title'>{props.title}</h4></div>
         <img className='detail-img' src={props.img} />
         <div className='detail-infos'>
-          <p class='card-text'>{props.desc}</p>
+          <p className='detail-desc' class='card-text'>{props.desc}</p>
           <h5 className='detail-head' class='card-title'> Price: $ {props.price}</h5>
           <button className='detail-btn' >Purchase</button>
         </div>

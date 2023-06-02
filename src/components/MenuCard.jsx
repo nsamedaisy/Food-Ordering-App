@@ -8,7 +8,7 @@ function MenuCard(props) {
 
   return (
     <div className='card-container' >
-      <img src={props.img} onClick={() => navigate(`/details`)} />
+      <img src={props.img} onClick={() => navigate(`${props.id}/details`)} />
       <div class='card-body'>
         <h5 class='card-title'>{props.title}</h5>
         <h5 class='card-title'>$ {props.price}</h5>

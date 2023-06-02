@@ -67,6 +67,7 @@ body {
   background-color: #000000d3;
   margin-top: 15px;
   margin: 0;
+  height: 100vh;
 }
 
 nav {
@@ -87,11 +88,8 @@ nav {
 }
 
 .navbar-links-container a:hover {
-  /* border-bottom: #e48f0fa8; */
-  /* border: #e48f0f 2px thick; */
-  text-underline-position: below;
+  text-decoration: underline 3px #e48f0f;
 }
-
 
 .navbar-menu-container {
   display: none;
@@ -110,7 +108,7 @@ nav {
 }
 
 .primary-button {
-  padding: 0.9rem 1.75rem;
+  padding: 0.7rem 1.3rem;
   background-color: wheat;
   outline: none;
   border: none;
@@ -125,10 +123,10 @@ nav {
   background-image: url('assets/dark-background.avif');
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
-  width: 98vw;
+  background-size: cover;
+  height: 80vh;
+  width: 90vw;
   margin: auto;
-  padding-top: 80px;
 }
 
 .primary-button:hover {
@@ -225,26 +223,30 @@ section {
   font-weight: 500;
   font-style: italic;
   border: wheat;
-  padding: 30px;
+  padding: 0 0 30px;
   text-transform: uppercase;
 }
 
 .detail-img {
-  width: 75vw;
-  height: 60vh;
+  width: 70vw;
+  height: 75vh;
   padding-bottom: 25px;
 }
 
 .detail-infos {
   color: wheat;
-  width: 75vw;
+  width: 70vw;
   font-size: 23px;
   margin: auto;
 }
 
-.detail-head {
-  padding-top: 120px;
+.detail-desc {
+  padding-bottom: 60px;
 }
+
+/* .detail-head {
+  padding-top: 120px;
+} */
 
 .detail-btn {
   padding: 1rem 2.5rem;
@@ -260,5 +262,67 @@ section {
 }
 
 .detail-btn:hover {
+  background-color: #e48f0f;
+}
+
+/* contact form section */
+
+.form-container {
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  color: wheat;
+  margin-top: 20px;
+  border: 1px solid #f5deb36f;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='Link'] {
+  display: block;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: wheat;
+  /* border: 1px solid wheat; */
+  box-shadow: 10px 3px 10px wheat;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  background-color: #00000084;
+}
+
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='Link']:hover {
+  color: wheat;
+  border: 1px solid wheat;
+  background-color: #000000f5;
+}
+
+.contact-btn {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 140px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contact-btn:hover {
   background-color: #e48f0f;
 }
