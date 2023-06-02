@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { useCart } from 'react-use-cart';
+// import React, { useContext } from 'react';
+// import { useCart } from 'react-use-cart';
 import Data from './data'
 import { useParams } from 'react-router-dom'
 

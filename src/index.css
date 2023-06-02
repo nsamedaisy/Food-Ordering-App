@@ -272,7 +272,7 @@ section {
   margin: auto;
   display: flex;
   justify-content: center;
-  height: 70vh;
+  height: 75vh;
   color: wheat;
   margin-top: 20px;
   border: 1px solid #f5deb36f;
@@ -287,7 +287,8 @@ label {
 
 input[type='text'],
 input[type='email'],
-input[type='Link'] {
+input[type='address'],
+input[type='location'] {
   display: block;
   width: 400px;
   padding: 6px 12px;
@@ -297,13 +298,13 @@ input[type='Link'] {
   /* border: 1px solid wheat; */
   box-shadow: 10px 3px 10px wheat;
   border-radius: 4px;
-  margin-bottom: 24px;
   background-color: #00000084;
 }
 
 input[type='text']:hover,
 input[type='email']:hover,
-input[type='Link']:hover {
+input[type='address']:hover,
+input[type='location']:hover {
   color: wheat;
   border: 1px solid wheat;
   background-color: #000000f5;
@@ -325,4 +326,28 @@ input[type='Link']:hover {
 
 .contact-btn:hover {
   background-color: #e48f0f;
+}
+
+.form-control {
+  margin-bottom: 24px;
+}
+
+.error {
+  color: #f54e4eaa;
+  padding-top: 3px;
+  text-align: center;
+}
+
+/* payment form section  */
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: 20vh auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: red;
 }

@@ -5,11 +5,10 @@ import Menu from './components/Menu';
 import Navbar from './components/Navbar';
 import Details from './components/Details';
 import Contact from './components/Contact';
-// import { CartProvider } from 'react-use-cart';
+import Payment from './components/Payment';
 import { BrowserRouter as Router, Routes, Route, NavLink, Link } from 'react-router-dom';
 
 function App() {
-  // const [productionData, setProductionData] = useState({})
 
   return (
     <div>
@@ -19,6 +18,7 @@ function App() {
         <Route path='/menu' element={<Menu />} />
         <Route path='/:id/details' element={<Details />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/payment' element={<Payment />} />
       </Routes>
     </div>
   );
