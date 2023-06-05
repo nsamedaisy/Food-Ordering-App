@@ -1,10 +1,8 @@
-// import React, { useContext } from 'react';
-// import { useCart } from 'react-use-cart';
-import Data from './data'
-import { useParams } from 'react-router-dom'
-
+import Data from './data';
+import { useNavigate, useParams } from 'react-router-dom';
 
 export default function Details() {
+  const navigate = useNavigate()
   let { id } = useParams();
   console.log(Data)
   const props = Data.find((ele) => ele.id == id);
@@ -17,10 +15,9 @@ export default function Details() {
         <div className='detail-infos'>
           <p className='detail-desc' class='card-text'>{props.desc}</p>
           <h5 className='detail-head' class='card-title'> Price: $ {props.price}</h5>
-          <button className='detail-btn' >Purchase</button>
+          <button className='detail-btn' onClick={() => navigate(`/${props.id}/contact`)}>Add to cart</button>
         </div>
       </div>
-
     </>
   )
 }

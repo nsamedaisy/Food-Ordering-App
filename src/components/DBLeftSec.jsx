@@ -14,8 +14,8 @@ function DBLeftSec() {
       <ul className='flex flex-col gap-4'>
         <Link
           to={'/dashboard/home'}>Home</Link>
-        <Link to='/dashboard/menu'>Menu</Link>
-        <Link to='/dashboard/contact'>Contact</Link>
+        <Link to='/dashboard/login'>Login</Link>
+        <Link to='/dashboard/items'>Items</Link>
         <Link to='/dashboard/newitems'>Add New Items</Link>
       </ul>
     </div>

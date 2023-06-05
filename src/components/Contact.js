@@ -1,5 +1,7 @@
-import React from 'react'
-import { useFormik } from 'formik'
+import React from 'react';
+import { useFormik } from 'formik';
+import { useNavigate, useParams } from 'react-router-dom';
+import Data from './data';
 
 const initialValues = {
   name: '',
@@ -7,6 +9,7 @@ const initialValues = {
   address: '',
   location: ''
 }
+
 const onSubmit = values => {
   console.log('Form data', values)
 }
@@ -36,6 +39,11 @@ const validate = values => {
 }
 
 function Contact() {
+  const navigate = useNavigate()
+
+  let { id } = useParams();
+  console.log(Data)
+  const props = Data.find((ele) => ele.id == id);
 
   const formik = useFormik({
     initialValues,
@@ -47,6 +55,7 @@ function Contact() {
 
   return (
     <div className='form-container' >
+
       <form onSubmit={formik.handleSubmit}>
         <div className='form-control'>
           <label htmlFor='name'>Name:</label>
@@ -101,7 +110,7 @@ function Contact() {
         </div>
 
         <div className='contact-btn'>
-          <button type='submit'>Submit</button>
+          <button type='submit' onClick={() => navigate(`/${props.id}/payment`)}>Submit</button>
         </div>
       </form>
     </div >

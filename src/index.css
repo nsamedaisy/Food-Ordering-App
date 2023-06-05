@@ -356,6 +356,7 @@ input[type='location']:hover {
   padding: 20px;
   border-bottom: 1px solid wheat;
   background-color: #2422224d;
+  color: #f6ca79;
 }
 
 .payment-form {
@@ -367,6 +368,11 @@ input[type='location']:hover {
 
 .payment-error {
   color: wheat;
+  padding-top: 15px;
+}
+
+.payment-price {
+  color: #e9c37efb;
 }
 
 .payment-btn {
@@ -377,7 +383,7 @@ input[type='location']:hover {
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;
-  color: wheat;
+  color: #f6ca79;
   transition: 0.2s;
   margin: 20px auto;
 }

@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import DBHome from './DBHome'
 import DBLogin from './DBLogin'
 import DBNewitems from './DBNewitems'
+import DBItems from './DBItems'
 
 function DBRightSec() {
   return (
@@ -13,6 +14,7 @@ function DBRightSec() {
         <Routes>
           <Route path='/home' element={<DBHome />} />
           <Route path='/login' element={<DBLogin />} />
+          <Route path='/items' element={<DBItems />} />
           <Route path='/newitems' element={<DBNewitems />} />
         </Routes>
       </div>

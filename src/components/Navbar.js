@@ -11,12 +11,6 @@ function Navbar() {
       text: 'Menu',
     },
     {
-      text: 'Contact',
-    },
-    {
-      text: 'Payment',
-    },
-    {
       text: 'Dashboard'
     },
   ];
@@ -29,8 +23,6 @@ function Navbar() {
       <div className='navbar-links-container' >
         <Link to='/'>Home</Link>
         <Link to='/Menu'>Menu</Link>
-        <Link to='/contact'>Contact</Link>
-        <Link to='/payment'>Payment</Link>
         <Link to='/dashboard'>Dashboard</Link>
         <button className='primary-button'>
           Order Now

@@ -1,7 +1,15 @@
 import React from 'react';
 import { PaymentInputsContainer } from 'react-payment-inputs';
+import Data from './data';
+import { useNavigate, useParams } from 'react-router-dom';
 
 function Payment() {
+
+  const navigate = useNavigate()
+  let { id } = useParams();
+  console.log(Data)
+  const props = Data.find((ele) => ele.id == id);
+
   return (
     <div className='payment-container'>
       <PaymentInputsContainer>
@@ -14,6 +22,7 @@ function Payment() {
           </form>
         )}
       </PaymentInputsContainer>
+      <h5 className='payment-price'>Price: $ {props.price}</h5>
       <button className='payment-btn' type='submit'>Confirm Payment</button>
     </div>
   )
