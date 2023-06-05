@@ -64,7 +64,7 @@ img:hover {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #000000d3;
+  background-color: #000000db;
   margin-top: 15px;
   margin: 0;
   height: 100vh;
@@ -340,14 +340,81 @@ input[type='location']:hover {
 
 /* payment form section  */
 
-.payment-form {
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
+.payment-container {
+  width: 70vw;
   margin: 20vh auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-  background-color: red;
+  background-color: #0e0d0d84;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.payment-input {
+  padding: 20px;
+  border-bottom: 1px solid wheat;
+  background-color: #2422224d;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 40px;
+}
+
+.payment-error {
+  color: wheat;
+}
+
+.payment-btn {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: wheat;
+  transition: 0.2s;
+  margin: 20px auto;
+}
+
+.payment-btn:hover {
+  background-color: #e48f0f;
+}
+
+/* checkout page  */
+
+.sucess-con {
+  width: 50vw;
+  align-items: center;
+  text-align: center;
+  margin: 15% auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sucess-con h1 {
+  font-size: 38px;
+  padding: 25px;
+  font-weight: 700;
+  font-style: italic;
+  color: #eec881fb;
+}
+
+.sucess-con p {
+  color: #16621b;
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.sucess-con h2 {
+  color: #f6ca79;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 700;
 }

@@ -5,8 +5,6 @@ import frenchfries from '../assets/frenchfries.avif';
 import pizza from '../assets/pizza.avif';
 import thaifish from '../assets/thaifish.avif';
 import rice from '../assets/rice.avif';
-import { useContext, useEffect } from 'react';
-import { FoodContext } from '../context/FoodContext';
 
 const data = [
   {
@@ -65,17 +63,5 @@ const data = [
     price: 25,
   }
 ]
-
-
-export function ExportData() {
-  const { productionData, setProductionData } = useContext(FoodContext)
-
-  useEffect(async () => {
-    await setProductionData(data);
-    console.log(productionData);
-  }, [])
-}
-
-
 
 export default data;

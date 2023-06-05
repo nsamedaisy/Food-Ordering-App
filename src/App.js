@@ -6,7 +6,9 @@ import Navbar from './components/Navbar';
 import Details from './components/Details';
 import Contact from './components/Contact';
 import Payment from './components/Payment';
+import Checkout from './components/Checkout';
 import { BrowserRouter as Router, Routes, Route, NavLink, Link } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
         <Route path='/:id/details' element={<Details />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/payment' element={<Payment />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
     </div>
   );

@@ -17,7 +17,7 @@ function Navbar() {
       text: 'Payment',
     },
     {
-      text: 'Checkout'
+      text: 'Dashboard'
     },
   ];
 
@@ -31,7 +31,7 @@ function Navbar() {
         <Link to='/Menu'>Menu</Link>
         <Link to='/contact'>Contact</Link>
         <Link to='/payment'>Payment</Link>
-        <Link to='/checkout'>Checkout</Link>
+        <Link to='/dashboard'>Dashboard</Link>
         <button className='primary-button'>
           Order Now
         </button>
