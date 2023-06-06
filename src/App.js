@@ -9,6 +9,7 @@ import Payment from './components/Payment';
 import Checkout from './components/Checkout';
 import { BrowserRouter as Router, Routes, Route, NavLink, Link, Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
+import AdminLogin from './components/AdminLogin';
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
         <Route path='/:id/contact' element={<Contact />} />
         <Route path='/:id/payment' element={<Payment />} />
         <Route path='/checkout' element={<Checkout />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/login' element={<AdminLogin />} />
+        <Route path='/dashboard/*' element={<Dashboard />} />
       </Routes>
     </div>
   );
