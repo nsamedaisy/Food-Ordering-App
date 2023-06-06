@@ -5,9 +5,9 @@ function DBHeader() {
   const user = useSelector((state) => state.user);
   return (
     <div className='w-full flex items-center justify-between gap-3'>
-      <p className='text-headingColor' >Admin's Dashboard
+      <h2 className='head-nav' >Admin's Dashboard
         {user?.name}
-      </p>
+      </h2>
 
       <div className='flex items-center justify-center gap-4'>
 
