@@ -1,0 +1,20 @@
+[
+  {
+    "orderID": "FB764",
+    "price": "",
+    "deliveryAddress": " rue17 Maison Rose Damase",
+    "status": "Delivered"
+  },
+  {
+    "orderID": "CA1d45",
+    "price": "",
+    "deliveryAddress": " rue11 Rond Point Express",
+    "status": "Delivered"
+  },
+  {
+    "orderID": "E23KDW",
+    "price": "",
+    "deliveryAddress": " rue101 Maison Vert Jovence",
+    "status": "Declined"
+  }
+]

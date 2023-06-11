@@ -23,7 +23,7 @@ function Payment() {
         )}
       </PaymentInputsContainer>
       <h5 className='payment-price'>Price: $ {props.price}</h5>
-      <button className='payment-btn' type='submit'>Confirm Payment</button>
+      <button className='payment-btn' type='submit' onClick={() => navigate(`/checkout`)}>Confirm Payment</button>
     </div>
   )
 }

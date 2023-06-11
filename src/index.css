@@ -31,7 +31,7 @@ img:hover {
   background: #11111185;
   color: wheat;
   font-size: 20px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   margin-bottom: 20px;
 }
 
@@ -47,7 +47,7 @@ img:hover {
 }
 
 .tertiarry-btn {
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   background-color: #16621b;
   outline: none;
   border: none;
@@ -55,6 +55,7 @@ img:hover {
   cursor: pointer;
   font-weight: 600;
   color: wheat;
+  width: 100%;
 }
 
 .tertiarry-btn:hover {
@@ -244,10 +245,6 @@ section {
   padding-bottom: 60px;
 }
 
-/* .detail-head {
-  padding-top: 120px;
-} */
-
 .detail-btn {
   padding: 1rem 2.5rem;
   background-color: #16621b;
@@ -290,12 +287,12 @@ input[type='email'],
 input[type='address'],
 input[type='location'] {
   display: block;
-  width: 440px;
+  width: 40vw;
   padding: 6px 12px;
   font-size: 18px;
   line-height: 1.4;
   color: wheat;
-  box-shadow: 10px 3px 10px wheat;
+  box-shadow: 1px 1px 5px wheat;
   border-radius: 4px;
   background-color: #00000084;
 }
@@ -317,7 +314,7 @@ input[type='location']:hover {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  width: 140px;
+  width: 180px;
   text-align: center;
   margin: auto;
   margin-top: 50px;
@@ -394,12 +391,13 @@ input[type='location']:hover {
 /* checkout page  */
 
 .sucess-con {
-  width: 50vw;
+  /* width: 50vw; */
   align-items: center;
   text-align: center;
   margin: 15% auto;
   justify-content: center;
   align-items: center;
+  /* border-radius:; */
 }
 
 .sucess-con h1 {
@@ -541,10 +539,8 @@ a:hover {
 
 /* DashBoard section  */
 
-.DBSearch {
+/* .DBSearch {
   width: 250px;
-  /* margin-right: 50%; */
-  /* padding-right: 100px; */
 }
 
 .dashboard-bg {
@@ -576,4 +572,4 @@ a:hover {
   font-size: 35px;
   font-weight: 900;
   font-style: italic;
-}
+} */

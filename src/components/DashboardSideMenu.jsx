@@ -1,0 +1,28 @@
+import React from 'react';
+import { Menu } from 'antd';
+import { useNavigate } from 'react-router-dom';
+
+function DashboardSideMenu() {
+  const navigate = useNavigate();
+
+  const menuItems = [
+    {
+      key: '/',
+      label: 'Orders',
+    },
+    {
+      key: 'menu',
+      label: 'Menu',
+    },
+    {
+      key: 'settings',
+      label: 'Settings',
+    },
+  ];
+
+  return (
+    <Menu items={menuItems} onClick= {(menuItem) => navigate(menuItem.key)} />
+  )
+}
+
+export default DashboardSideMenu

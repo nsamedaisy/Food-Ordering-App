@@ -1,45 +1,57 @@
-// import React from 'react';
-// import MaterialTable from 'material-table';
+import React from 'react';
+import orders from '../assets/data/orders.json';
+import { Card, Table, Tag } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
-// function DBOrders() {
-//   return (
-//     <div className='flex items-center justify-self-center gap-4 pt-5 w-full'>
-//       <MaterialTable
-//         title="Remote Data Preview"
-//         columns={[
-//           {
-//             title: 'Avatar',
-//             field: 'avatar',
-//             render: rowData => (
-//               <img
-//                 style={{ height: 36, borderRadius: '50%' }}
-//                 src={rowData.avatar}
-//               />
-//             ),
-//           },
-//           { title: 'Id', field: 'id' },
-//           { title: 'First Name', field: 'first_name' },
-//           { title: 'Last Name', field: 'last_name' },
-//         ]}
-//         data={query =>
-//           new Promise((resolve, reject) => {
-//             let url = 'https://reqres.in/api/users?'
-//             url += 'per_page=' + query.pageSize
-//             url += '&page=' + (query.page + 1)
-//             fetch(url)
-//               .then(response => response.json())
-//               .then(result => {
-//                 resolve({
-//                   data: result.data,
-//                   page: result.page - 1,
-//                   totalCount: result.total,
-//                 })
-//               })
-//           })
-//         }
-//       />
-//     </div>
-//   )
-// }
+function DBOrders() {
+  const navigate = useNavigate()
 
-// export default DBOrders
+  const renderOrderStatus = (orderStatus) => {
+    if (orderStatus === 'Accepted') {
+      return <Tag color={'green'}>{orderStatus}</Tag>
+    }
+    if (orderStatus === 'Pending') {
+      return <Tag color={'blue'}>{orderStatus}</Tag>
+    } if (orderStatus === 'Declined') {
+      return <Tag color={'red'}>{orderStatus}</Tag>
+    }
+  }
+  const tableColumns = [
+    {
+      title: 'OrderID',
+      dataIndex: 'OrderID',
+      key: 'OrderID',
+    },
+    {
+      title: 'Delivery Address',
+      dataIndex: 'Delivery Address',
+      key: 'Delivery Address',
+    },
+    {
+      title: 'Price',
+      dataIndex: 'Price',
+      key: 'Price',
+      render: (Price) => `${Price} $`
+    },
+    {
+      title: 'Status',
+      dataIndex: 'Status',
+      key: 'Status',
+      render: renderOrderStatus
+    }
+  ]
+    return (
+      <Card title={'List of Orders'} style={{margin: 20}}>
+        <Table
+        dataSource={orders}
+        columns={tableColumns}
+        rowKey='orderID'
+        onRow={(orderItem) =>  ({
+          onClick: () => navigate(`/${orderItem.orderID}/DBDetailorder`)
+        })}
+        />
+        </Card>
+    )
+}
+
+export default DBOrders

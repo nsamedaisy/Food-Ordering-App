@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink, Link, Switch } from 'r
 import Dashboard from './components/Dashboard';
 import AdminLogin from './components/AdminLogin';
 
+
 function App() {
 
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/login' element={<AdminLogin />} />
         <Route path='/dashboard/*' element={<Dashboard />} />
       </Routes>
+
     </div>
   );
 }
