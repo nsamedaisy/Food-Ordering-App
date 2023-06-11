@@ -4,7 +4,7 @@ import { Form, Input, Card, Button } from 'antd';
 
 function DBSettings() {
   return (
-    <Card title='Restaurant Details' style={{ margin: 20 }}>
+    <Card title='Restaurant Details' style={{ margin: 90, backgroundColor: '#3662186f' }}>
       <Form layout='vertcal' wrapperCol={{ span: 15 }} >
         <Form.Item label='Restaurant Name' required>
           <Input placeholder='Enter restaurant name here' />

@@ -13,9 +13,6 @@ function Navbar() {
     {
       text: 'Login'
     },
-    {
-      text: 'Dashboard'
-    },
   ];
 
   return (
@@ -27,7 +24,6 @@ function Navbar() {
         <Link to='/'>Home</Link>
         <Link to='/Menu'>Menu</Link>
         <Link to='/login'>LOGIN</Link>
-        <Link to='/dashboard'>Dashboard</Link>
         <button className='primary-button'>
           Order Now
         </button>

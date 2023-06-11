@@ -23,10 +23,10 @@ function DBMenu() {
   ];
 
   return (
-    <Card title={'Menu'} style={{ margin: 20}}>
-        <Table dataSource={Data} columns={tableColumns} rowKey='id' />
+    <Card title={'Choose from the menu below the available meal'} style={{ margin: 50, backgroundColor: '#3662186f'}}>
+        <Table style={{ margin: 20, backgroundColor: '#3662186f'}} dataSource={Data} columns={tableColumns} rowKey='id' />
         <Link to={'create'}>
-          <Button type='primary' style={{backgroundColor: 'green'}}>New Item</Button>
+          <Button type='primary' style={{backgroundColor: '#3662186f'}}>New Item</Button>
         </Link>
     </Card>
   )

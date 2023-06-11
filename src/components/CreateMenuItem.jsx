@@ -5,7 +5,8 @@ const { TextArea } = Input;
 
 function CreateMenuItem() {
   return (
-    <Card title='New Menu Item' style={{ margin: 25 }}>
+    <div className='createmenuitem'>
+    <Card title='New Menu Item' style={{ margin: 100, backgroundColor: '#3662186f' }}>
       <Form layout='vertical' wrapperCol={{ span: 15}}>
         <Form.Item label='Dish Name' required>
           <Input placeholder='Enter dish name' />
@@ -20,10 +21,11 @@ function CreateMenuItem() {
         </Form.Item>
 
         <Form.Item>
-          <Button type='primary' style={{ backgroundColor: 'green'}}>Submit</Button>
+          <Button type='primary' style={{ backgroundColor: '#3662186f'}}>Submit</Button>
         </Form.Item>
       </Form>
     </Card>
+    </div>
   )
 }
 

@@ -14,6 +14,10 @@ function DashboardSideMenu() {
       key: 'menu',
       label: 'Menu',
     },
+    // {
+    //   key: 'order-history',
+    //   label: 'Order History',
+    // },
     {
       key: 'settings',
       label: 'Settings',
@@ -21,7 +25,7 @@ function DashboardSideMenu() {
   ];
 
   return (
-    <Menu items={menuItems} onClick= {(menuItem) => navigate(menuItem.key)} />
+    <Menu className='menu-items' items={menuItems} onClick= {(menuItem) => navigate(menuItem.key)} />
   )
 }
 
