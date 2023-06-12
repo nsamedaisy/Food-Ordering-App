@@ -6,7 +6,7 @@ const { TextArea } = Input;
 function CreateMenuItem() {
   return (
     <div className='createmenuitem'>
-    <Card title='New Menu Item' style={{ margin: 100, backgroundColor: '#3662186f' }}>
+    <Card title='New Menu Item' style={{ margin: 100 }}>
       <Form layout='vertical' wrapperCol={{ span: 15}}>
         <Form.Item label='Dish Name' required>
           <Input placeholder='Enter dish name' />

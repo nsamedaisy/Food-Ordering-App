@@ -540,9 +540,9 @@ a:hover {
 /* DashBoard section  */
 
 .menu-items {
-  background-color: #99d2733f;
-  color: wheat;
+  background-color: #15141434;
+  color: whitesmoke;
   font-weight: 800;
-  padding-left: 20px;
+  /* padding: 30px; */
   font-size: 22px;
 }

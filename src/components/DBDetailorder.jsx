@@ -8,7 +8,7 @@ function DBDetailorder() {
   const { id } = useParams();
 
   return (
-    <Card title={`Order ${id}`} style={{ margins: 20 }}>
+    <Card title={`Order`} style={{ margins: 20 }}>
       <Descriptions bordered column={{ lg: 1, md:1, sm: 1 }}>
         <Descriptions.Item label="Customer Name">
           {" "}

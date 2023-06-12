@@ -26,7 +26,6 @@ function App() {
         <Route path='/login' element={<AdminLogin />} />
         <Route path='/dashboard/*' element={<Dashboard />} />
       </Routes>
-
     </div>
   );
 }
