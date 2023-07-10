@@ -10,6 +10,7 @@ import Checkout from './components/Checkout';
 import { BrowserRouter as Router, Routes, Route, NavLink, Link, Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import AdminLogin from './components/AdminLogin';
+import DBDetailorder from './components/DBDetailorder';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/login' element={<AdminLogin />} />
         <Route path='/dashboard/*' element={<Dashboard />} />
       </Routes>
+      {/* <DBDetailorder /> */}
     </div>
   );
 }

@@ -272,7 +272,7 @@ section {
   height: 75vh;
   color: wheat;
   margin-top: 20px;
-  border: 1px solid #f5deb36f;
+  border: 1px solid #f5deb326;
   align-items: center;
 }
 
@@ -292,7 +292,7 @@ input[type='location'] {
   font-size: 18px;
   line-height: 1.4;
   color: wheat;
-  box-shadow: 1px 1px 5px wheat;
+  box-shadow: 1px 2px 5px rgba(245, 222, 179, 0.499);
   border-radius: 4px;
   background-color: #00000084;
 }
@@ -307,12 +307,13 @@ input[type='location']:hover {
 }
 
 .contact-btn {
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   background-color: #16621b;
+  font-weight: 700;
   outline: none;
   border-radius: 15px;
   border: none;
-  font-size: 1rem;
+  font-size: 20px;
   cursor: pointer;
   width: 180px;
   text-align: center;
@@ -438,16 +439,16 @@ input[type='location']:hover {
 .sub-main {
   display: flex;
   justify-content: center;
-  height: 590px;
-  width: 35%;
-  box-shadow: 1px 5px 5px 5px wheat;
+  height: 70vh;
+  width: 38vw;
+  box-shadow: 1px 1px 1px 1px #f5deb382;
   padding-top: 30px;
   border-radius: 60px;
-  background-color: #0e0d0d84;
+  background-color: #0e0d0df4;
 }
 
 .imgs {
-  padding-top: 20px;
+  padding: 20px 0 15px;
   justify-content: center;
   display: flex;
 }
@@ -457,8 +458,8 @@ input[type='location']:hover {
   align-items: center;
   display: flex;
   justify-content: center;
-  height: 120px;
-  width: 125px;
+  height: 130px;
+  width: 130px;
 }
 
 .profile {
@@ -493,7 +494,7 @@ input[type='location']:hover {
 }
 
 .second-input {
-  padding-top: 22px;
+  padding-top: 30px;
 }
 
 .main button {
@@ -512,13 +513,17 @@ input[type='location']:hover {
 
 }
 
+.login-text {
+  margin-bottom: 20px;
+}
+
 .login-button {
   padding-top: 25px;
 }
 
 .link {
   font-weight: 400;
-  padding-top: 10px;
+  padding: 15px;
   font-size: 22px;
 }
 
