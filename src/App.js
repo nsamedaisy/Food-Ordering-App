@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './index.css';
 import Home from './components/Home';
 import Menu from './components/Menu';
@@ -7,10 +6,10 @@ import Details from './components/Details';
 import Contact from './components/Contact';
 import Payment from './components/Payment';
 import Checkout from './components/Checkout';
-import { BrowserRouter as Router, Routes, Route, NavLink, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import AdminLogin from './components/AdminLogin';
-import DBDetailorder from './components/DBDetailorder';
+// import DBDetailorder from './components/DBDetailorder';
 
 function App() {
 

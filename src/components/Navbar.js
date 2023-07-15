@@ -7,9 +7,9 @@ function Navbar() {
     {
       text: 'Home',
     },
-    {
-      text: 'Menu',
-    },
+    // {
+    //   text: 'Menu',
+    // },
     {
       text: 'Login'
     },
@@ -22,7 +22,7 @@ function Navbar() {
       </div>
       <div className='navbar-links-container' >
         <Link to='/'>Home</Link>
-        <Link to='/Menu'>Menu</Link>
+        {/* <Link to='/Menu'>Menu</Link> */}
         <Link to='/login'>LOGIN</Link>
         <button className='primary-button'>
           Order Now

@@ -56,7 +56,14 @@ function DBMenu() {
         rowKey="id"
       />
       <Link to={"create"}>
-        <Button type="primary" style={{ backgroundColor: "#151414b1" }}>
+        <Button
+          type="primary"
+          style={{
+            backgroundColor: "#151414b1",
+            fontSize: "22px",
+            height: "44px",
+          }}
+        >
           New Item
         </Button>
       </Link>
