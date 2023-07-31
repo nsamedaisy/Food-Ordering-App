@@ -7,7 +7,7 @@ function DashboardSideMenu() {
 
   const menuItems = [
     {
-      key: '/',
+      key: 'orders',
       label: 'Orders',
     },
     {

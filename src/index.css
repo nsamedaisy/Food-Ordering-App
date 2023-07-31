@@ -385,15 +385,13 @@ input[type='location']:hover {
 }
 
 /* checkout page  */
-
+/* 
 .sucess-con {
-  /* width: 50vw; */
   align-items: center;
   text-align: center;
   margin: 15% auto;
   justify-content: center;
   align-items: center;
-  /* border-radius:; */
 }
 
 .sucess-con h1 {
@@ -416,7 +414,7 @@ input[type='location']:hover {
   font-size: 26px;
   font-style: italic;
   font-weight: 700;
-}
+} */
 
 /* Login section */
 

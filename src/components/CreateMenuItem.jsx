@@ -1,10 +1,28 @@
-import React from "react";
+import { React, useState } from "react";
 import { Form, Input, Button, Card, InputNumber } from "antd";
+// import DBMenu from "./DBMenu";
 // import data from "../components/data"
 
 const { TextArea } = Input;
 
-function CreateMenuItem() {
+function CreateMenuItem(props) {
+  const [name, setName] = useState("");
+  const [quantity, setQuantity] = useState("");
+  // const [menuItems, setMenuItems] = useState([]);
+
+  const handleAdd = () => {
+    const newItem = { name: name, quantity: quantity };
+    // image,
+    // title,
+    // description,
+    // price,
+    props.onAddItem(newItem);
+    setName("");
+    setQuantity("");
+
+    // const updatedMenuItems = [...menuItems, newItem];
+    // setMenuItems(updatedMenuItems);
+  };
 
   return (
     <div className="createmenuitem">
@@ -24,7 +42,11 @@ function CreateMenuItem() {
           </Form.Item>
 
           <Form.Item>
-            <Button type="link" style={{ backgroundColor: "#3662186f" }} >
+            <Button
+              type="link"
+              style={{ backgroundColor: "#3662186f" }}
+              onClick={handleAdd}
+            >
               Add Item
             </Button>
           </Form.Item>
@@ -35,6 +57,5 @@ function CreateMenuItem() {
 }
 
 export default CreateMenuItem;
-
 
 // onClick={() => addItem()}
