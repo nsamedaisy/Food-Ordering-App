@@ -68,7 +68,7 @@ const data = [
     id: 1,
     img: chicken,
     title: "Baked whole chicken",
-    desc: "Cranberry Orange Chicken is the perfect one pan, a seasonal meal made with juicy, tart cranberries and fresh orange juice and zest. I can say that this Cranberry Orange Chicken is simply the best you can have! ",
+    desc: "Chicken is the perfect one pan, a seasonal meal made with juicy, tart cranberries and fresh orange juice and zest. I can say that this Cranberry Orange Chicken is simply the best you can have! ",
     price: 100,
   },
   {
