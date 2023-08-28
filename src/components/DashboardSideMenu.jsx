@@ -6,13 +6,14 @@ function DashboardSideMenu() {
   const navigate = useNavigate();
 
   const menuItems = [
-    {
-      key: 'orders',
-      label: 'Orders',
-    },
+    
     {
       key: 'menu',
       label: 'Menu',
+    },
+    {
+      key: 'orders',
+      label: 'Orders',
     },
     // {
     //   key: 'order-history',
