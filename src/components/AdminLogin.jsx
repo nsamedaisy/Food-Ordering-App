@@ -37,8 +37,7 @@ function AdminLogin() {
   const navigate = useNavigate();
 
   let { id } = useParams();
-  console.log(Data);
-  const props = Data.find((ele) => ele.id == id);
+  Data.find((ele) => ele.id === id);
 
   const formik = useFormik({
     initialValues,
@@ -99,7 +98,7 @@ function AdminLogin() {
               </div>
 
               <p className="link">
-                <a href="#">Forgot password ?</a> Or<a href="#">Sign Up</a>
+                <a href="/#">Forgot password ?</a> Or<a href="/#">Sign Up</a>
               </p>
             </div>
           </form>

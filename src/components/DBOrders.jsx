@@ -7,7 +7,7 @@ import Data from './data'
 function DBOrders() {
   const navigate = useNavigate();
   let { id } = useParams();
-  const props = Data.find((ele) => ele.id == id);
+  Data.find((ele) => ele.id === id);
 
   const renderOrderStatus = (orderStatus) => {
     if (orderStatus === "Accepted") {

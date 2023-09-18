@@ -43,7 +43,7 @@ function Contact() {
 
   let { id } = useParams();
   console.log(Data)
-  const props = Data.find((ele) => ele.id == id);
+  const props = Data.find((ele) => ele.id === id);
 
   const formik = useFormik({
     initialValues,

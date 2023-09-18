@@ -7,7 +7,7 @@ import { Modal } from "antd";
 function Payment() {
   const navigate = useNavigate();
   let { id } = useParams();
-  const props = Data.find((ele) => ele.id == id);
+  const props = Data.find((ele) => ele.id === id);
 
   const CheckOut = () => {
     Modal.confirm({

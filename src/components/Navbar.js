@@ -6,33 +6,30 @@ function Navbar() {
   const menuOptions = [
     {
       text: 'Home',
+      link: '/',
     },
-    // {
-    //   text: 'Menu',
-    // },
     {
-      text: 'Login'
+      text: 'Login',
+      link: '/login',
     },
   ];
 
   return (
     <nav>
-      <div className='nav-logo-container'>Daisy's Ordering App
-        {/* <img src={logo} alt='' /> */}
-      </div>
-      <div className='navbar-links-container' >
-        <Link to='/'>Home</Link>
-        {/* <Link to='/Menu'>Menu</Link> */}
-        <Link to='/login'>LOGIN</Link>
-        <button className='primary-button'>
-          Order Now
-        </button>
+      <div className='nav-logo-container'>Daisy's Ordering App</div>
+      <div className='navbar-links-container'>
+        {menuOptions.map((option) => (
+          <Link key={option.text} to={option.link}>
+            {option.text}
+          </Link>
+        ))}
+        <button className='primary-button'>Order Now</button>
       </div>
       <div className='navbar-menu-container'>
         <bars onClick={() => setOpenMenu(true)} />
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -6,8 +6,7 @@ function Home() {
 
   const navigate = useNavigate()
   let { id } = useParams();
-  console.log(Data)
-  const props = Data.find((ele) => ele.id == id);
+ Data.find((ele) => ele.id === id);
 
   return (
     <div>
