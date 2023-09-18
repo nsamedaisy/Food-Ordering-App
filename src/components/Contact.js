@@ -43,7 +43,7 @@ function Contact() {
 
   let { id } = useParams();
   console.log(Data)
-  const props = Data.find((ele) => ele.id === id);
+  const props = Data.find((ele) => ele.id == id);
 
   const formik = useFormik({
     initialValues,
@@ -51,7 +51,7 @@ function Contact() {
     validate
   })
 
-  console.log('visited fields', formik.touched)
+  // console.log('visited fields', formik.touched)
 
   return (
     <div className='form-container' >
