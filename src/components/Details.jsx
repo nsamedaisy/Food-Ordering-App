@@ -5,7 +5,7 @@ export default function Details() {
   const navigate = useNavigate();
   let { id } = useParams();
   console.log(Data);
-  const props = Data.find((ele) => ele.id === id);
+  const props = Data.find((ele) => ele.id == id);
 
   return (
     <>
@@ -13,7 +13,7 @@ export default function Details() {
         <div className="detail-title">
           <h4 class="card-title">{props.title}</h4>
         </div>
-        <img className="detail-img" src={props.img} alt="detailimg"/>
+        <img className="detail-img" src={props.img} alt="detailimg" />
         <div className="detail-infos">
           <p className="detail-desc" class="card-text">
             {props.desc}
