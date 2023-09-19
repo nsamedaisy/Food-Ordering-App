@@ -10,46 +10,51 @@ const initialValues = {
   location: ''
 }
 
-const onSubmit = values => {
-  console.log('Form data', values)
-}
-const validate = values => {
-  let errors = {}
-
-  if (!values.name) {
-    errors.name = 'Required'
-  }
-
-  if (!values.email) {
-    errors.email = 'Required';
-  } else if (
-    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-  ) {
-    errors.email = 'Invalid email address';
-  }
-
-  if (!values.address) {
-    errors.address = 'Required'
-  }
-
-  if (!values.location) {
-    errors.location = 'Required'
-  }
-  return errors
-}
-
 function Contact() {
   const navigate = useNavigate()
 
   let { id } = useParams();
-  console.log(Data)
-  const props = Data.find((ele) => ele.id == id);
+  // console.log(Data)
+  const props = Data.find((ele) => ele.id === id);
+
+  const onSubmit = values => {
+    // console.log('Form data', values)
+    const errors = validate(values);
+    if (Object.keys(errors).length === 0) {
+      navigate(`/${props.id}/payment`);
+    }
+  }
+  const validate = values => {
+    let errors = {}
+  
+    if (!values.name) {
+      errors.name = 'Required'
+    }
+  
+    if (!values.email) {
+      errors.email = 'Required';
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+    ) {
+      errors.email = 'Invalid email address';
+    }
+  
+    if (!values.address) {
+      errors.address = 'Required'
+    }
+  
+    if (!values.location) {
+      errors.location = 'Required'
+    }
+    return errors
+  }
 
   const formik = useFormik({
     initialValues,
     onSubmit,
     validate
   })
+
 
   // console.log('visited fields', formik.touched)
 
@@ -110,7 +115,7 @@ function Contact() {
         </div>
 
         <div className='contact-btn'>
-          <button type='submit' onClick={() => navigate(`/${props.id}/payment`)}>Submit</button>
+          <button type='submit' onClick={onSubmit}>Submit</button>
         </div>
       </form>
     </div >
