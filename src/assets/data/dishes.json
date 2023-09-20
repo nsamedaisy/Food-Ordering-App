@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "title": "chicken",
+    "price": 100
+  },
+  {
+    "id": "2",
+    "title": "italianpasta",
+    "price": 50
+  },
+  {
+    "id": "3",
+    "title": "porkhock",
+    "price": 110
+  }
+]

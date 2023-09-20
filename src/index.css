@@ -1,0 +1,522 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  /* @apply w-96 h-80 */
+}
+
+img {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 37vh;
+}
+
+img:hover {
+  box-shadow: #e48f0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+.card-container {
+  width: 350px;
+  background: #11111185;
+  color: wheat;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.card-body {
+  text-align: center;
+  justify-content: center;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tertiarry-btn {
+  padding: 1rem 2rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: wheat;
+  width: 100%;
+}
+
+.tertiarry-btn:hover {
+  background-color: #e48f0f;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #000000db;
+  margin-top: 15px;
+  margin: 0;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 10px;
+}
+
+.nav-logo-container {
+  color: wheat;
+  font-weight: 900;
+  font-size: 16px;
+  width: 120px;
+  text-align: center;
+  font-style: oblique;
+}
+
+.navlogospan {
+  font-size: 25px;
+}
+
+.navbar-links-container a:hover {
+  text-decoration: underline 3px #e48f0f;
+}
+
+.navbar-menu-container {
+  display: none;
+}
+
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: wheat;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  height: 60px;
+}
+
+.primary-button {
+  padding: 0.7rem 1.3rem;
+  background-color: #f5deb3;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.home-container {
+  background-image: url('assets/dark-background.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+}
+
+.primary-button:hover {
+  background-color: green;
+}
+
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.home-banner-container {
+  position: relative;
+  display: flex;
+  padding: 4rem 2rem;
+  width: 55vw;
+  /* margin: auto; */
+}
+
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: wheat;
+  line-height: 5rem;
+  max-width: 600px;
+}
+
+.primary-text {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  max-width: 500px;
+  color: wheat;
+  margin: 1.5rem 0.5rem;
+}
+
+.secondary-button {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: wheat;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-button svg {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.secondary-button:hover {
+  background-color: #e48f0f;
+}
+
+section {
+  width: 350px;
+  background: #11111185;
+  color: wheat;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-btn {
+  background-color: #16621b;
+  padding: 0.3rem 0.8rem;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-around;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: wheat;
+}
+
+/* details styling */
+
+.detail-container {
+  width: 98vw;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.detail-title {
+  color: wheat;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  border: wheat;
+  padding: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.detail-img {
+  width: 65vw;
+  height: 75vh;
+  padding-bottom: 25px;
+}
+
+.detail-infos {
+  color: wheat;
+  width: 60vw;
+  font-size: 23px;
+  margin: auto;
+}
+
+.detail-btn {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: wheat;
+  transition: 0.2s;
+  margin: 20px auto;
+}
+
+.detail-btn:hover {
+  background-color: #e48f0f;
+}
+
+/* contact form section */
+
+.form-container {
+  width: 620px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  color: wheat;
+  margin-top: 20px;
+  border: 1px solid #f5deb326;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='address'],
+input[type='location'] {
+  display: block;
+  width: 490px;
+  padding: 10px 12px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: wheat;
+  box-shadow: 1px 2px 5px #f5deb341;
+  border-radius: 4px;
+  background-color: #00000084;
+}
+
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='address']:hover,
+input[type='location']:hover {
+  color: wheat;
+  border: 1px solid wheat;
+  background-color: #000000f5;
+}
+
+.contact-btn {
+  padding: 0.7rem 2rem;
+  background-color: #16621b;
+  font-weight: 700;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 490px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contact-btn:hover {
+  background-color: #e48f0f;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #f54e4eaa;
+  padding-top: 3px;
+  text-align: center;
+}
+
+/* payment form section  */
+
+.payment-container {
+  width: 70%;
+  text-align: center;
+  background-color: #0e0d0d84;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.payment-input {
+  padding: 20px;
+  border-bottom: 1px solid #f5deb36b;
+  background-color: #2422224d;
+  color: #f6ca79;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 50px;
+}
+
+.payment-error {
+  color: wheat;
+  padding-top: 15px;
+}
+
+.payment-price {
+  color: #e9c37efb;
+}
+
+.payment-btn {
+  padding: 1rem 2.5rem;
+  background-color: #16621b;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #f6ca79;
+  transition: 0.2s;
+  margin: 20px auto;
+}
+
+.payment-btn:hover {
+  background-color: #e48f0f;
+}
+
+/* Login section */
+
+.main {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: wheat;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.sub-main {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  width: 38vw;
+  box-shadow: 1px 1px 1px 1px #f5deb382;
+  padding-top: 30px;
+  border-radius: 60px;
+  background-color: #0e0d0df4;
+}
+
+.imgs {
+  padding: 20px 0 15px;
+  justify-content: center;
+  display: flex;
+}
+
+.container-image {
+  border-radius: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 130px;
+  width: 130px;
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 130px;
+}
+
+.main .name {
+  width: 100%;
+  height: 50px;
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 35px 0px wheat;
+  border: none;
+  outline: none;
+  background-color: #d7b47316;
+  padding-left: 60px;
+  font-size: 20px;
+  color: #001001;
+}
+
+.main .name:hover {
+  background-color: #174517d8;
+  color: wheat;
+}
+
+.email {
+  height: 38px;
+  width: 50px;
+  position: absolute;
+  padding: 14px 0 0 25px;
+}
+
+.second-input {
+  padding-top: 30px;
+}
+
+.main button {
+  width: 300px;
+  height: 50px;
+  border-radius: 60px;
+  background-color: #16621b70;
+  color: wheat;
+  font-size: 25px;
+  font-weight: 400;
+  border: none;
+}
+
+.main button:hover {
+  background-color: #e48f0fc7;
+
+}
+
+.login-text {
+  margin-bottom: 20px;
+}
+
+.login-button {
+  padding-top: 25px;
+}
+
+.link {
+  font-weight: 400;
+  padding: 15px;
+  font-size: 22px;
+}
+
+a {
+  color: #16621b;
+}
+
+a:hover {
+  text-decoration: underline #e48f0f;
+}
+
+.main .error {
+  font-size: 18px;
+  padding-top: 8px;
+  width: fit-content;
+  margin: auto;
+}
+
+/* DashBoard section  */
+
+.menu-items {
+  background-color: #15141434;
+  color: whitesmoke;
+  font-weight: 800;
+  /* padding: 30px; */
+  font-size: 22px;
+}

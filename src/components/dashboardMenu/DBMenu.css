@@ -1,0 +1,45 @@
+.Dbmenu {
+  background-color: #fff;
+  height: 100%;
+  color: #000000ce;
+}
+
+h2 {
+  font-size: 24px;
+  margin-left: 3%;
+  padding-top: 15px;
+}
+
+.dbTable {
+  margin: 40px;
+  box-shadow: #00000029 0px 1px 4px;
+  width: 85%;
+  font-size: 16px;
+  line-height: 3;
+}
+
+th {
+  text-align: left;
+}
+
+td,
+th {
+  border-bottom: 1px solid #403f3f13;
+  border: 1px solid  #403f3f25;
+  padding-left: 15px;
+}
+
+.remove {
+  color: #ff0000a9;
+  padding: 1px 20px;
+}
+
+.addItem {
+  box-shadow: #00000073 0px 3px 7px 5px;
+  border: 1px solid #00000029;
+  padding: 4px 10px;
+  margin-left: 3%;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 700;
+}
