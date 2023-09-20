@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 export default function Details() {
   const navigate = useNavigate();
   let { id } = useParams();
-  console.log(Data);
   const props = Data.find((ele) => ele.id == id);
 
   return (

@@ -2,8 +2,7 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 function Navbar() {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [openMenu, setOpenMenu] = React.useState(false);
   const menuOptions = [
     {
@@ -18,7 +17,10 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="nav-logo-container"> <span className="navlogospan">Beri's</span> Ordering App</div>
+      <div className="nav-logo-container">
+        {" "}
+        <span className="navlogospan">Beri's</span> Ordering App
+      </div>
       <div className="navbar-links-container">
         {menuOptions.map((option) => (
           <Link key={option.text} to={option.link}>

@@ -1,125 +1,130 @@
-import React from 'react';
-import { useFormik } from 'formik';
-import { useNavigate, useParams } from 'react-router-dom';
-import Data from './data';
+import React from "react";
+import { useFormik } from "formik";
+import { useNavigate, useParams } from "react-router-dom";
+import Data from "./data";
 
 const initialValues = {
-  name: '',
-  email: '',
-  address: '',
-  location: ''
-}
+  name: "",
+  email: "",
+  address: "",
+  location: "",
+};
 
 function Contact() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const { id } = useParams();
+  const props = Data.find((ele) => ele.id == id);
 
-  let { id } = useParams();
-  // console.log(Data)
-  const props = Data.find((ele) => ele.id === id);
+  const validate = (values) => {
+    let errors = {};
 
-  const onSubmit = values => {
-    // console.log('Form data', values)
-    const errors = validate(values);
-    if (Object.keys(errors).length === 0) {
-      navigate(`/${props.id}/payment`);
-    }
-  }
-  const validate = values => {
-    let errors = {}
-  
     if (!values.name) {
-      errors.name = 'Required'
+      errors.name = "Required";
     }
-  
+
     if (!values.email) {
-      errors.email = 'Required';
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-    ) {
-      errors.email = 'Invalid email address';
+      errors.email = "Required";
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+      errors.email = "Invalid email address";
     }
-  
+
     if (!values.address) {
-      errors.address = 'Required'
+      errors.address = "Required";
     }
-  
+
     if (!values.location) {
-      errors.location = 'Required'
+      errors.location = "Required";
     }
-    return errors
-  }
+
+    return errors;
+  };
 
   const formik = useFormik({
     initialValues,
-    onSubmit,
-    validate
-  })
-
-
-  // console.log('visited fields', formik.touched)
+    validate,
+    // onSubmit: (values) => {
+    //   console.log(" form submitted");
+    //   const errors = validate(values);
+    //   if (Object.keys(errors).length === 0 && props) {
+    //     navigate(`/${props.id}/payment`);
+    //   }
+    // },
+  });
 
   return (
-    <div className='form-container' >
-
+    <div className="form-container">
       <form onSubmit={formik.handleSubmit}>
-        <div className='form-control'>
-          <label htmlFor='name'>Name:</label>
+        <div className="form-control">
+          <label htmlFor="name">Name:</label>
           <input
-            type='text'
-            id='name'
-            name='name'
+            type="text"
+            id="name"
+            name="name"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
           />
-          {formik.touched.name && formik.errors.name ? <div className='error'>{formik.errors.name}</div> : null}
+          {formik.touched.name && formik.errors.name ? (
+            <div className="error">{formik.errors.name}</div>
+          ) : null}
         </div>
 
-        <div className='form-control'>
-          <label htmlFor='email'>E-mail:</label>
+        <div className="form-control">
+          <label htmlFor="email">E-mail:</label>
           <input
-            type='email'
-            id='email'
-            name='email'
+            type="email"
+            id="email"
+            name="email"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
           />
-          {formik.touched.name && formik.errors.email ? <div className='error'>{formik.errors.email}</div> : null}
+          {formik.touched.email && formik.errors.email ? (
+            <div className="error">{formik.errors.email}</div>
+          ) : null}
         </div>
 
-        <div className='form-control'>
-          <label htmlFor='address'>Address:</label>
+        <div className="form-control">
+          <label htmlFor="address">Address:</label>
           <input
-            type='address'
-            id='address'
-            name='address'
+            type="text"
+            id="address"
+            name="address"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.address}
           />
-          {formik.touched.name && formik.errors.address ? <div className='error'>{formik.errors.address}</div> : null}
+          {formik.touched.address && formik.errors.address ? (
+            <div className="error">{formik.errors.address}</div>
+          ) : null}
         </div>
 
-        <div className='form-control'>
-          <label htmlFor='location'>Location:</label>
+        <div className="form-control">
+          <label htmlFor="location">Location:</label>
           <input
-            type='location'
-            id='link'
-            name='location'
+            type="text"
+            id="location"
+            name="location"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.location}
           />
-          {formik.touched.name && formik.errors.location ? <div className='error'>{formik.errors.location}</div> : null}
+          {formik.touched.location && formik.errors.location ? (
+            <div className="error">{formik.errors.location}</div>
+          ) : null}
         </div>
 
-        <div className='contact-btn'>
-          <button type='submit' onClick={onSubmit}>Submit</button>
+        <div className="contact-btn">
+          <button
+            type="submit"
+            onClick={() => navigate(`/${props.id}/payment`)}
+          >
+            Submit
+          </button>
         </div>
       </form>
-    </div >
-  )
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;
